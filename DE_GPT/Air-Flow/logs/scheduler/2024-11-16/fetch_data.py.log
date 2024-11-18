@@ -1,0 +1,477 @@
+[2024-11-16T23:00:54.270+0000] {processor.py:186} INFO - Started process (PID=79) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:00:54.272+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:00:54.278+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:00:54.277+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:00:54.348+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:00:54.326+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:00:54.352+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:00:54.413+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.154 seconds
+[2024-11-16T23:17:32.566+0000] {processor.py:186} INFO - Started process (PID=72) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:17:32.570+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:17:32.580+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:17:32.579+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:17:32.662+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:17:32.640+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:17:32.669+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:17:32.727+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.190 seconds
+[2024-11-16T23:18:02.864+0000] {processor.py:186} INFO - Started process (PID=136) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:18:02.866+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:18:02.871+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:18:02.870+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:18:02.906+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:18:02.899+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:18:02.910+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:18:02.940+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.087 seconds
+[2024-11-16T23:18:33.252+0000] {processor.py:186} INFO - Started process (PID=200) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:18:33.256+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:18:33.266+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:18:33.264+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:18:33.347+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:18:33.330+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:18:33.354+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:18:33.452+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.225 seconds
+[2024-11-16T23:19:04.010+0000] {processor.py:186} INFO - Started process (PID=264) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:19:04.012+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:19:04.018+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:19:04.017+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:19:04.070+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:19:04.058+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:19:04.074+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:19:04.135+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.140 seconds
+[2024-11-16T23:19:34.472+0000] {processor.py:186} INFO - Started process (PID=328) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:19:34.475+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:19:34.479+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:19:34.479+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:19:34.529+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:19:34.518+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:19:34.533+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:19:34.575+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.116 seconds
+[2024-11-16T23:20:04.758+0000] {processor.py:186} INFO - Started process (PID=392) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:20:04.763+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:20:04.774+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:20:04.773+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:20:04.849+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:20:04.834+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:20:04.855+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:20:04.933+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.202 seconds
+[2024-11-16T23:21:51.803+0000] {processor.py:186} INFO - Started process (PID=70) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:21:51.806+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:21:51.812+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:21:51.811+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:21:51.863+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:21:51.841+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:21:51.866+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:21:51.905+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.114 seconds
+[2024-11-16T23:22:22.033+0000] {processor.py:186} INFO - Started process (PID=134) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:22:22.035+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:22:22.041+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:22:22.040+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:22:22.068+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:22:22.062+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:22:22.072+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:22:22.117+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.100 seconds
+[2024-11-16T23:22:52.500+0000] {processor.py:186} INFO - Started process (PID=198) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:22:52.501+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:22:52.505+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:22:52.505+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:22:52.532+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:22:52.526+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:22:52.535+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:22:52.582+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.094 seconds
+[2024-11-16T23:23:22.961+0000] {processor.py:186} INFO - Started process (PID=262) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:23:22.963+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:23:22.967+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:23:22.967+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:23:23.006+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:23:22.999+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:23:23.009+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:23:23.045+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.100 seconds
+[2024-11-16T23:23:53.409+0000] {processor.py:186} INFO - Started process (PID=326) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:23:53.413+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:23:53.422+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:23:53.420+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:23:53.506+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:23:53.485+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:23:53.512+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:23:53.590+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.206 seconds
+[2024-11-16T23:26:02.493+0000] {processor.py:186} INFO - Started process (PID=60) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:26:02.495+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:26:02.499+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:26:02.498+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:26:02.524+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:26:02.517+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:26:02.526+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:26:02.554+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.070 seconds
+[2024-11-16T23:26:33.386+0000] {processor.py:186} INFO - Started process (PID=124) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:26:33.387+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:26:33.389+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:26:33.389+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:26:33.410+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:26:33.406+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:26:33.413+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:26:33.431+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.052 seconds
+[2024-11-16T23:27:03.604+0000] {processor.py:186} INFO - Started process (PID=188) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:27:03.606+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:27:03.610+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:27:03.609+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:27:03.625+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:27:03.620+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:27:03.627+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:27:03.647+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.048 seconds
+[2024-11-16T23:27:33.817+0000] {processor.py:186} INFO - Started process (PID=252) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:27:33.818+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:27:33.820+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:27:33.820+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:27:33.840+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:27:33.836+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:27:33.842+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:27:33.863+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.051 seconds
+[2024-11-16T23:29:40.799+0000] {processor.py:186} INFO - Started process (PID=72) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:29:40.800+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:29:40.804+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:29:40.803+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:29:40.827+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:29:40.822+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:29:40.829+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:29:40.863+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.071 seconds
+[2024-11-16T23:30:11.433+0000] {processor.py:186} INFO - Started process (PID=136) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:30:11.434+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:30:11.437+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:30:11.437+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:30:11.456+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:30:11.452+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:30:11.458+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:30:11.479+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.055 seconds
+[2024-11-16T23:30:41.792+0000] {processor.py:186} INFO - Started process (PID=200) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:30:41.793+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:30:41.795+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:30:41.795+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:30:41.818+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:30:41.812+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:30:41.820+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:30:41.839+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.054 seconds
+[2024-11-16T23:31:11.955+0000] {processor.py:186} INFO - Started process (PID=264) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:31:11.956+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:31:11.958+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:31:11.958+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:31:11.979+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:31:11.975+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:31:11.980+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:31:11.999+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.050 seconds
+[2024-11-16T23:31:42.404+0000] {processor.py:186} INFO - Started process (PID=328) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:31:42.405+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:31:42.407+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:31:42.406+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:31:42.426+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:31:42.422+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:31:42.428+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:31:42.447+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.049 seconds
+[2024-11-16T23:32:12.916+0000] {processor.py:186} INFO - Started process (PID=392) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:32:12.917+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:32:12.919+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:32:12.919+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:32:12.944+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:32:12.939+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:32:12.946+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:32:12.964+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.053 seconds
+[2024-11-16T23:32:43.432+0000] {processor.py:186} INFO - Started process (PID=456) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:32:43.433+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:32:43.435+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:32:43.435+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:32:43.453+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:32:43.450+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:32:43.455+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:32:43.474+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.047 seconds
+[2024-11-16T23:33:14.397+0000] {processor.py:186} INFO - Started process (PID=520) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:33:14.399+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:33:14.403+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:33:14.403+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:33:14.445+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:33:14.439+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:33:14.448+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:33:14.498+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.114 seconds
+[2024-11-16T23:33:45.114+0000] {processor.py:186} INFO - Started process (PID=584) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:33:45.115+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:33:45.118+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:33:45.118+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:33:45.140+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:33:45.135+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:33:45.142+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:33:45.184+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.078 seconds
+[2024-11-16T23:34:15.715+0000] {processor.py:186} INFO - Started process (PID=648) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:34:15.716+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:34:15.719+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:34:15.718+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:34:15.740+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:34:15.735+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:34:15.742+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:34:15.762+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.053 seconds
+[2024-11-16T23:34:45.840+0000] {processor.py:186} INFO - Started process (PID=706) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:34:45.842+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:34:45.844+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:34:45.843+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:34:45.872+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:34:45.866+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:34:45.874+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:34:45.892+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.057 seconds
+[2024-11-16T23:35:16.080+0000] {processor.py:186} INFO - Started process (PID=770) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:35:16.081+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:35:16.083+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:35:16.082+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:35:16.104+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:35:16.100+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:35:16.106+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:35:16.124+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.049 seconds
+[2024-11-16T23:35:46.713+0000] {processor.py:186} INFO - Started process (PID=834) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:35:46.714+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:35:46.717+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:35:46.716+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:35:46.734+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:35:46.731+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/fetch_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetch_data.py", line 6, in <module>
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
+[2024-11-16T23:35:46.735+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:35:46.753+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.046 seconds
+[2024-11-16T23:36:13.126+0000] {processor.py:186} INFO - Started process (PID=898) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:36:13.127+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:36:13.129+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:13.129+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:36:13.159+0000] {processor.py:925} INFO - DAG(s) 'mockaroo_to_postgres_pipeline' retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:36:13.256+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:13.255+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:mockaroo_to_postgres_pipeline
+[2024-11-16T23:36:13.265+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:13.265+0000] {override.py:1911} INFO - Created Permission View: can edit on DAG:mockaroo_to_postgres_pipeline
+[2024-11-16T23:36:13.273+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:13.273+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:mockaroo_to_postgres_pipeline
+[2024-11-16T23:36:13.282+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:13.282+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:mockaroo_to_postgres_pipeline
+[2024-11-16T23:36:13.291+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:13.291+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:mockaroo_to_postgres_pipeline
+[2024-11-16T23:36:13.298+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:13.298+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:mockaroo_to_postgres_pipeline
+[2024-11-16T23:36:13.306+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:13.306+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:mockaroo_to_postgres_pipeline
+[2024-11-16T23:36:13.307+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:13.307+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-16T23:36:13.319+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:13.318+0000] {dag.py:3262} INFO - Creating ORM DAG for mockaroo_to_postgres_pipeline
+[2024-11-16T23:36:13.328+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:13.328+0000] {dag.py:4180} INFO - Setting next_dagrun for mockaroo_to_postgres_pipeline to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
+[2024-11-16T23:36:13.347+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.228 seconds
+[2024-11-16T23:36:44.108+0000] {processor.py:186} INFO - Started process (PID=962) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:36:44.109+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:36:44.112+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:44.111+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:36:44.137+0000] {processor.py:925} INFO - DAG(s) 'mockaroo_to_postgres_pipeline' retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:36:44.155+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:44.155+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-16T23:36:44.178+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:36:44.177+0000] {dag.py:4180} INFO - Setting next_dagrun for mockaroo_to_postgres_pipeline to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
+[2024-11-16T23:36:44.198+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.096 seconds
+[2024-11-16T23:39:08.412+0000] {processor.py:186} INFO - Started process (PID=72) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:39:08.414+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:39:08.419+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:39:08.418+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:39:08.469+0000] {processor.py:925} INFO - DAG(s) 'mockaroo_to_postgres_pipeline' retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:39:08.574+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:39:08.574+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-16T23:39:08.630+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:39:08.629+0000] {dag.py:4180} INFO - Setting next_dagrun for mockaroo_to_postgres_pipeline to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
+[2024-11-16T23:39:08.671+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.273 seconds
+[2024-11-16T23:39:38.947+0000] {processor.py:186} INFO - Started process (PID=135) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:39:38.947+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:39:38.950+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:39:38.949+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:39:38.970+0000] {processor.py:925} INFO - DAG(s) 'mockaroo_to_postgres_pipeline' retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:39:38.987+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:39:38.987+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-16T23:39:39.008+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:39:39.008+0000] {dag.py:4180} INFO - Setting next_dagrun for mockaroo_to_postgres_pipeline to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
+[2024-11-16T23:39:39.025+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.084 seconds
+[2024-11-16T23:40:09.350+0000] {processor.py:186} INFO - Started process (PID=199) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:40:09.351+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:40:09.353+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:40:09.353+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:40:09.377+0000] {processor.py:925} INFO - DAG(s) 'mockaroo_to_postgres_pipeline' retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:40:09.395+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:40:09.395+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-16T23:40:09.420+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:40:09.420+0000] {dag.py:4180} INFO - Setting next_dagrun for mockaroo_to_postgres_pipeline to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
+[2024-11-16T23:40:09.440+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.095 seconds
+[2024-11-16T23:40:40.129+0000] {processor.py:186} INFO - Started process (PID=267) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:40:40.131+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:40:40.136+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:40:40.135+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:40:40.173+0000] {processor.py:925} INFO - DAG(s) 'mockaroo_to_postgres_pipeline' retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:40:40.209+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:40:40.208+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-16T23:40:40.300+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:40:40.299+0000] {dag.py:4180} INFO - Setting next_dagrun for mockaroo_to_postgres_pipeline to 2024-11-16 00:00:00+00:00, run_after=2024-11-17 00:00:00+00:00
+[2024-11-16T23:40:40.348+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.232 seconds
+[2024-11-16T23:41:10.422+0000] {processor.py:186} INFO - Started process (PID=335) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:41:10.423+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:41:10.426+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:41:10.425+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:41:10.446+0000] {processor.py:925} INFO - DAG(s) 'mockaroo_to_postgres_pipeline' retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:41:10.465+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:41:10.465+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-16T23:41:10.492+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:41:10.492+0000] {dag.py:4180} INFO - Setting next_dagrun for mockaroo_to_postgres_pipeline to 2024-11-16 00:00:00+00:00, run_after=2024-11-17 00:00:00+00:00
+[2024-11-16T23:41:10.516+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.100 seconds
+[2024-11-16T23:41:40.820+0000] {processor.py:186} INFO - Started process (PID=399) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:41:40.821+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:41:40.824+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:41:40.823+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:41:40.846+0000] {processor.py:925} INFO - DAG(s) 'mockaroo_to_postgres_pipeline' retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:41:40.872+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:41:40.872+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-16T23:41:40.901+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:41:40.901+0000] {dag.py:4180} INFO - Setting next_dagrun for mockaroo_to_postgres_pipeline to 2024-11-16 00:00:00+00:00, run_after=2024-11-17 00:00:00+00:00
+[2024-11-16T23:41:40.921+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.109 seconds
+[2024-11-16T23:42:11.707+0000] {processor.py:186} INFO - Started process (PID=463) to work on /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:42:11.709+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_data.py for tasks to queue
+[2024-11-16T23:42:11.714+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:42:11.713+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:42:11.749+0000] {processor.py:925} INFO - DAG(s) 'mockaroo_to_postgres_pipeline' retrieved from /opt/airflow/dags/fetch_data.py
+[2024-11-16T23:42:11.793+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:42:11.792+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-16T23:42:11.935+0000] {logging_mixin.py:190} INFO - [2024-11-16T23:42:11.934+0000] {dag.py:4180} INFO - Setting next_dagrun for mockaroo_to_postgres_pipeline to 2024-11-16 00:00:00+00:00, run_after=2024-11-17 00:00:00+00:00
+[2024-11-16T23:42:11.979+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_data.py took 0.283 seconds

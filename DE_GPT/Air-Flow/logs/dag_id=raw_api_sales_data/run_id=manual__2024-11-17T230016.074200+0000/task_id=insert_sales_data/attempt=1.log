@@ -1,0 +1,314 @@
+[2024-11-17T23:00:29.968+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-17T23:00:29.997+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: raw_api_sales_data.insert_sales_data manual__2024-11-17T23:00:16.074200+00:00 [queued]>
+[2024-11-17T23:00:30.013+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: raw_api_sales_data.insert_sales_data manual__2024-11-17T23:00:16.074200+00:00 [queued]>
+[2024-11-17T23:00:30.014+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2024-11-17T23:00:30.092+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): insert_sales_data> on 2024-11-17 23:00:16.074200+00:00
+[2024-11-17T23:00:30.103+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=624) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-17T23:00:30.107+0000] {standard_task_runner.py:72} INFO - Started process 635 to run task
+[2024-11-17T23:00:30.108+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'raw_api_sales_data', 'insert_sales_data', 'manual__2024-11-17T23:00:16.074200+00:00', '--job-id', '144', '--raw', '--subdir', 'DAGS_FOLDER/fetch_data.py', '--cfg-path', '/tmp/tmp5v9hcl54']
+[2024-11-17T23:00:30.111+0000] {standard_task_runner.py:105} INFO - Job 144: Subtask insert_sales_data
+[2024-11-17T23:00:30.216+0000] {task_command.py:467} INFO - Running <TaskInstance: raw_api_sales_data.insert_sales_data manual__2024-11-17T23:00:16.074200+00:00 [running]> on host 525767e32e17
+[2024-11-17T23:00:30.502+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='raw_api_sales_data' AIRFLOW_CTX_TASK_ID='insert_sales_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-17T23:00:16.074200+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-17T23:00:16.074200+00:00'
+[2024-11-17T23:00:30.507+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-17T23:00:30.509+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-17T23:00:30.511+0000] {logging_mixin.py:190} INFO - Current task name:insert_sales_data state:running start_date:2024-11-17 23:00:29.999015+00:00
+[2024-11-17T23:00:30.512+0000] {logging_mixin.py:190} INFO - Dag name:raw_api_sales_data and current dag run status:running
+[2024-11-17T23:00:30.513+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-17T23:00:30.547+0000] {logging_mixin.py:190} INFO - sales_data: [{'customer_id': 729, 'customer_name': 'Jen Kinrade', 'age': 57, 'email': 'jkinrade0@auda.org.au', 'country': 'Peru', 'postal_code': nan, 'purchase_id': 1893, 'purchase_quantity': 43, 'purchase_date': '4/14/2021', 'product_id': 2045, 'product_name': 'Beer - Upper Canada Light', 'quantity': 265, 'total_price': 366.45, 'price_unit': 387.15}, {'customer_id': 726, 'customer_name': 'Jackson Edmeads', 'age': 44, 'email': 'jedmeads1@google.co.uk', 'country': 'China', 'postal_code': nan, 'purchase_id': 415, 'purchase_quantity': 52, 'purchase_date': '1/24/2021', 'product_id': 2012, 'product_name': 'Sauce - Chili', 'quantity': 849, 'total_price': 6441.3, 'price_unit': 597.66}, {'customer_id': 676, 'customer_name': 'Freda Adney', 'age': 52, 'email': 'fadney2@pinterest.com', 'country': 'Argentina', 'postal_code': '5166', 'purchase_id': 1536, 'purchase_quantity': 98, 'purchase_date': '1/31/2021', 'product_id': 2029, 'product_name': 'Island Oasis - Lemonade', 'quantity': 133, 'total_price': 4032.64, 'price_unit': 469.79}, {'customer_id': 118, 'customer_name': 'Deloria Enion', 'age': 42, 'email': 'denion3@sciencedirect.com', 'country': 'Guatemala', 'postal_code': '14008', 'purchase_id': 1345, 'purchase_quantity': 9, 'purchase_date': '9/17/2021', 'product_id': 2013, 'product_name': 'Ham - Virginia', 'quantity': 116, 'total_price': 1157.22, 'price_unit': 628.54}, {'customer_id': 24, 'customer_name': 'Cherice Goodyear', 'age': 51, 'email': 'cgoodyear4@t-online.de', 'country': 'Portugal', 'postal_code': '3830-268', 'purchase_id': 208, 'purchase_quantity': 33, 'purchase_date': '7/6/2021', 'product_id': 2011, 'product_name': 'Muffin Chocolate Individual Wrap', 'quantity': 278, 'total_price': 123.23, 'price_unit': 872.86}, {'customer_id': 490, 'customer_name': 'Miltie Franchi', 'age': 43, 'email': 'mfranchi5@ameblo.jp', 'country': 'China', 'postal_code': nan, 'purchase_id': 1176, 'purchase_quantity': 97, 'purchase_date': '1/8/2021', 'product_id': 2019, 'product_name': 'Cheese - Brick With Pepper', 'quantity': 262, 'total_price': 5716.01, 'price_unit': 399.82}, {'customer_id': 770, 'customer_name': 'Gray Caukill', 'age': 19, 'email': 'gcaukill6@tuttocitta.it', 'country': 'Indonesia', 'postal_code': nan, 'purchase_id': 533, 'purchase_quantity': 79, 'purchase_date': '1/15/2021', 'product_id': 2080, 'product_name': 'Pasta - Linguini, Dry', 'quantity': 779, 'total_price': 8361.3, 'price_unit': 761.39}, {'customer_id': 885, 'customer_name': 'Sonny Forrest', 'age': 27, 'email': 'sforrest7@google.de', 'country': 'Croatia', 'postal_code': '44430', 'purchase_id': 1378, 'purchase_quantity': 66, 'purchase_date': '9/2/2021', 'product_id': 2040, 'product_name': 'Wine - Magnotta - Red, Baco', 'quantity': 245, 'total_price': 8857.27, 'price_unit': 736.26}, {'customer_id': 473, 'customer_name': 'Catherina Lightwing', 'age': 62, 'email': 'clightwing8@xinhuanet.com', 'country': 'Dominican Republic', 'postal_code': '10802', 'purchase_id': 499, 'purchase_quantity': 84, 'purchase_date': '2/12/2021', 'product_id': 2003, 'product_name': 'Pepper Squash', 'quantity': 887, 'total_price': 5642.24, 'price_unit': 880.2}, {'customer_id': 804, 'customer_name': 'Bobinette Frobisher', 'age': 27, 'email': 'bfrobisher9@bandcamp.com', 'country': 'Russia', 'postal_code': '431646', 'purchase_id': 467, 'purchase_quantity': 45, 'purchase_date': '7/8/2021', 'product_id': 2005, 'product_name': 'Flower - Potmums', 'quantity': 659, 'total_price': 9324.79, 'price_unit': 6.51}]
+[2024-11-17T23:00:30.558+0000] {logging_mixin.py:190} WARNING - --- Logging error ---
+[2024-11-17T23:00:30.564+0000] {logging_mixin.py:190} WARNING - Traceback (most recent call last):
+[2024-11-17T23:00:30.569+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+[2024-11-17T23:00:30.572+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+[2024-11-17T23:00:30.576+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+[2024-11-17T23:00:30.579+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+[2024-11-17T23:00:30.581+0000] {logging_mixin.py:190} WARNING - TypeError: not all arguments converted during string formatting
+[2024-11-17T23:00:30.583+0000] {logging_mixin.py:190} WARNING - Call stack:
+[2024-11-17T23:00:30.614+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/bin/***", line 8, in <module>
+    sys.exit(main())
+[2024-11-17T23:00:30.616+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/__main__.py", line 62, in main
+    args.func(args)
+[2024-11-17T23:00:30.639+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+[2024-11-17T23:00:30.640+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+[2024-11-17T23:00:30.642+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/providers/celery/cli/celery_command.py", line 61, in wrapper
+    providers_configuration_loaded(func)(*args, **kwargs)
+[2024-11-17T23:00:30.643+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/utils/providers_configuration_loader.py", line 55, in wrapped_function
+    return func(*args, **kwargs)
+[2024-11-17T23:00:30.644+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/providers/celery/cli/celery_command.py", line 234, in worker
+    _run_command_with_daemon_option(
+[2024-11-17T23:00:30.646+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/providers/celery/cli/celery_command.py", line 47, in _run_command_with_daemon_option
+    run_command_with_daemon_option(*args, **kwargs)
+[2024-11-17T23:00:30.647+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/daemon_utils.py", line 86, in run_command_with_daemon_option
+    callback()
+[2024-11-17T23:00:30.649+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/providers/celery/cli/celery_command.py", line 227, in run_celery_worker
+    celery_app.worker_main(options)
+[2024-11-17T23:00:30.651+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/app/base.py", line 391, in worker_main
+    self.start(argv=argv)
+[2024-11-17T23:00:30.652+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/app/base.py", line 371, in start
+    celery.main(args=argv, standalone_mode=False)
+[2024-11-17T23:00:30.653+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+[2024-11-17T23:00:30.654+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/click/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[2024-11-17T23:00:30.655+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+[2024-11-17T23:00:30.656+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+[2024-11-17T23:00:30.658+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/click/decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+[2024-11-17T23:00:30.659+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/bin/base.py", line 135, in caller
+    return f(ctx, *args, **kwargs)
+[2024-11-17T23:00:30.660+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/bin/worker.py", line 356, in worker
+    worker.start()
+[2024-11-17T23:00:30.662+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/worker/worker.py", line 202, in start
+    self.blueprint.start(self)
+[2024-11-17T23:00:30.663+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+[2024-11-17T23:00:30.664+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+[2024-11-17T23:00:30.665+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/concurrency/base.py", line 130, in start
+    self.on_start()
+[2024-11-17T23:00:30.667+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/concurrency/prefork.py", line 109, in on_start
+    P = self._pool = Pool(processes=self.limit,
+[2024-11-17T23:00:30.668+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/concurrency/asynpool.py", line 464, in __init__
+    super().__init__(processes, *args, **kwargs)
+[2024-11-17T23:00:30.670+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/billiard/pool.py", line 1046, in __init__
+    self._create_worker_process(i)
+[2024-11-17T23:00:30.671+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/concurrency/asynpool.py", line 482, in _create_worker_process
+    return super()._create_worker_process(i)
+[2024-11-17T23:00:30.673+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/billiard/pool.py", line 1158, in _create_worker_process
+    w.start()
+[2024-11-17T23:00:30.674+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/billiard/process.py", line 120, in start
+    self._popen = self._Popen(self)
+[2024-11-17T23:00:30.675+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/billiard/context.py", line 331, in _Popen
+    return Popen(process_obj)
+[2024-11-17T23:00:30.676+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/billiard/popen_fork.py", line 22, in __init__
+    self._launch(process_obj)
+[2024-11-17T23:00:30.677+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/billiard/popen_fork.py", line 77, in _launch
+    code = process_obj._bootstrap()
+[2024-11-17T23:00:30.678+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/billiard/process.py", line 323, in _bootstrap
+    self.run()
+[2024-11-17T23:00:30.680+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/billiard/process.py", line 110, in run
+    self._target(*self._args, **self._kwargs)
+[2024-11-17T23:00:30.682+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/billiard/pool.py", line 292, in __call__
+    sys.exit(self.workloop(pid=pid))
+[2024-11-17T23:00:30.684+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/billiard/pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+[2024-11-17T23:00:30.685+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/app/trace.py", line 651, in fast_trace_task
+    R, I, T, Rstr = tasks[task].__trace__(
+[2024-11-17T23:00:30.686+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+[2024-11-17T23:00:30.687+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+[2024-11-17T23:00:30.688+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/providers/celery/executors/celery_executor_utils.py", line 139, in execute_command
+    _execute_in_fork(command_to_exec, celery_task_id)
+[2024-11-17T23:00:30.689+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/providers/celery/executors/celery_executor_utils.py", line 175, in _execute_in_fork
+    args.func(args)
+[2024-11-17T23:00:30.690+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+[2024-11-17T23:00:30.692+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+[2024-11-17T23:00:30.693+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+[2024-11-17T23:00:30.694+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/task_command.py", line 254, in _run_task_by_selected_method
+    return _run_task_by_local_task_job(args, ti)
+[2024-11-17T23:00:30.695+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/task_command.py", line 322, in _run_task_by_local_task_job
+    ret = run_job(job=job_runner.job, execute_callable=job_runner._execute)
+[2024-11-17T23:00:30.696+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+[2024-11-17T23:00:30.698+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+[2024-11-17T23:00:30.700+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+[2024-11-17T23:00:30.702+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/jobs/local_task_job_runner.py", line 171, in _execute
+    self.task_runner.start()
+[2024-11-17T23:00:30.703+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py", line 55, in start
+    self.process = self._start_by_fork()
+[2024-11-17T23:00:30.704+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+[2024-11-17T23:00:30.705+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+[2024-11-17T23:00:30.706+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+[2024-11-17T23:00:30.708+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+[2024-11-17T23:00:30.709+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+[2024-11-17T23:00:30.710+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+[2024-11-17T23:00:30.711+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+[2024-11-17T23:00:30.713+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+[2024-11-17T23:00:30.715+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+[2024-11-17T23:00:30.716+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+[2024-11-17T23:00:30.717+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+[2024-11-17T23:00:30.719+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+[2024-11-17T23:00:30.720+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+[2024-11-17T23:00:30.721+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+[2024-11-17T23:00:30.722+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+[2024-11-17T23:00:30.724+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+[2024-11-17T23:00:30.725+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+[2024-11-17T23:00:30.726+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+[2024-11-17T23:00:30.727+0000] {logging_mixin.py:190} WARNING -   File "/opt/***/dags/fetch_data.py", line 60, in insert_sales_data
+    logging.info("wwwwwwwwwwwwwwwwwwwwww@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Successfully fetched sales data from the API.",sales_data)
+[2024-11-17T23:00:30.729+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/logging/__init__.py", line 2216, in info
+    root.info(msg, *args, **kwargs)
+[2024-11-17T23:00:30.730+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/logging/__init__.py", line 1539, in info
+    self._log(INFO, msg, args, **kwargs)
+[2024-11-17T23:00:30.731+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/logging/__init__.py", line 1684, in _log
+    self.handle(record)
+[2024-11-17T23:00:30.732+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/logging/__init__.py", line 1700, in handle
+    self.callHandlers(record)
+[2024-11-17T23:00:30.733+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/logging/__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+[2024-11-17T23:00:30.734+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/logging/__init__.py", line 1028, in handle
+    self.emit(record)
+[2024-11-17T23:00:30.735+0000] {logging_mixin.py:190} WARNING -   File "/home/***/.local/lib/python3.12/site-packages/***/utils/log/file_task_handler.py", line 274, in emit
+    self.handler.emit(record)
+[2024-11-17T23:00:30.736+0000] {logging_mixin.py:190} WARNING - Message: 'wwwwwwwwwwwwwwwwwwwwww@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Successfully fetched sales data from the API.'
+Arguments: ([{'customer_id': 729, 'customer_name': 'Jen Kinrade', 'age': 57, 'email': 'jkinrade0@auda.org.au', 'country': 'Peru', 'postal_code': nan, 'purchase_id': 1893, 'purchase_quantity': 43, 'purchase_date': '4/14/2021', 'product_id': 2045, 'product_name': 'Beer - Upper Canada Light', 'quantity': 265, 'total_price': 366.45, 'price_unit': 387.15}, {'customer_id': 726, 'customer_name': 'Jackson Edmeads', 'age': 44, 'email': 'jedmeads1@google.co.uk', 'country': 'China', 'postal_code': nan, 'purchase_id': 415, 'purchase_quantity': 52, 'purchase_date': '1/24/2021', 'product_id': 2012, 'product_name': 'Sauce - Chili', 'quantity': 849, 'total_price': 6441.3, 'price_unit': 597.66}, {'customer_id': 676, 'customer_name': 'Freda Adney', 'age': 52, 'email': 'fadney2@pinterest.com', 'country': 'Argentina', 'postal_code': '5166', 'purchase_id': 1536, 'purchase_quantity': 98, 'purchase_date': '1/31/2021', 'product_id': 2029, 'product_name': 'Island Oasis - Lemonade', 'quantity': 133, 'total_price': 4032.64, 'price_unit': 469.79}, {'customer_id': 118, 'customer_name': 'Deloria Enion', 'age': 42, 'email': 'denion3@sciencedirect.com', 'country': 'Guatemala', 'postal_code': '14008', 'purchase_id': 1345, 'purchase_quantity': 9, 'purchase_date': '9/17/2021', 'product_id': 2013, 'product_name': 'Ham - Virginia', 'quantity': 116, 'total_price': 1157.22, 'price_unit': 628.54}, {'customer_id': 24, 'customer_name': 'Cherice Goodyear', 'age': 51, 'email': 'cgoodyear4@t-online.de', 'country': 'Portugal', 'postal_code': '3830-268', 'purchase_id': 208, 'purchase_quantity': 33, 'purchase_date': '7/6/2021', 'product_id': 2011, 'product_name': 'Muffin Chocolate Individual Wrap', 'quantity': 278, 'total_price': 123.23, 'price_unit': 872.86}, {'customer_id': 490, 'customer_name': 'Miltie Franchi', 'age': 43, 'email': 'mfranchi5@ameblo.jp', 'country': 'China', 'postal_code': nan, 'purchase_id': 1176, 'purchase_quantity': 97, 'purchase_date': '1/8/2021', 'product_id': 2019, 'product_name': 'Cheese - Brick With Pepper', 'quantity': 262, 'total_price': 5716.01, 'price_unit': 399.82}, {'customer_id': 770, 'customer_name': 'Gray Caukill', 'age': 19, 'email': 'gcaukill6@tuttocitta.it', 'country': 'Indonesia', 'postal_code': nan, 'purchase_id': 533, 'purchase_quantity': 79, 'purchase_date': '1/15/2021', 'product_id': 2080, 'product_name': 'Pasta - Linguini, Dry', 'quantity': 779, 'total_price': 8361.3, 'price_unit': 761.39}, {'customer_id': 885, 'customer_name': 'Sonny Forrest', 'age': 27, 'email': 'sforrest7@google.de', 'country': 'Croatia', 'postal_code': '44430', 'purchase_id': 1378, 'purchase_quantity': 66, 'purchase_date': '9/2/2021', 'product_id': 2040, 'product_name': 'Wine - Magnotta - Red, Baco', 'quantity': 245, 'total_price': 8857.27, 'price_unit': 736.26}, {'customer_id': 473, 'customer_name': 'Catherina Lightwing', 'age': 62, 'email': 'clightwing8@xinhuanet.com', 'country': 'Dominican Republic', 'postal_code': '10802', 'purchase_id': 499, 'purchase_quantity': 84, 'purchase_date': '2/12/2021', 'product_id': 2003, 'product_name': 'Pepper Squash', 'quantity': 887, 'total_price': 5642.24, 'price_unit': 880.2}, {'customer_id': 804, 'customer_name': 'Bobinette Frobisher', 'age': 27, 'email': 'bfrobisher9@bandcamp.com', 'country': 'Russia', 'postal_code': '431646', 'purchase_id': 467, 'purchase_quantity': 45, 'purchase_date': '7/8/2021', 'product_id': 2005, 'product_name': 'Flower - Potmums', 'quantity': 659, 'total_price': 9324.79, 'price_unit': 6.51}],)
+[2024-11-17T23:00:30.756+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-17T23:00:30.759+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fetch_data.py", line 61, in insert_sales_data
+    conn = hook.get_conn()
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/postgres/hooks/postgres.py", line 181, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2024-11-17T23:00:30.799+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-11-17T23:00:30.800+0000] {logging_mixin.py:190} INFO - Task start:2024-11-17 23:00:29.999015+00:00 end:2024-11-17 23:00:30.798610+00:00 duration:0.799595
+[2024-11-17T23:00:30.802+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): insert_sales_data> dag:<DAG: raw_api_sales_data> dagrun:<DagRun raw_api_sales_data @ 2024-11-17 23:00:16.074200+00:00: manual__2024-11-17T23:00:16.074200+00:00, state:running, queued_at: 2024-11-17 23:00:16.099534+00:00. externally triggered: True>
+[2024-11-17T23:00:30.803+0000] {logging_mixin.py:190} INFO - Failure caused by connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2024-11-17T23:00:30.803+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=raw_api_sales_data, task_id=insert_sales_data, run_id=manual__2024-11-17T23:00:16.074200+00:00, execution_date=20241117T230016, start_date=20241117T230029, end_date=20241117T230030
+[2024-11-17T23:00:30.839+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-17T23:00:30.841+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 144 for task insert_sales_data (connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+; 635)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fetch_data.py", line 61, in insert_sales_data
+    conn = hook.get_conn()
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/postgres/hooks/postgres.py", line 181, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2024-11-17T23:00:30.889+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-11-17T23:00:30.935+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-17T23:00:30.938+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

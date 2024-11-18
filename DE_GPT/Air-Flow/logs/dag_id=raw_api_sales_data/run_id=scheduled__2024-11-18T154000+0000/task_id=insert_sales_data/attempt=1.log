@@ -1,0 +1,30 @@
+[2024-11-18T15:58:48.859+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-18T15:58:48.913+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: raw_api_sales_data.insert_sales_data scheduled__2024-11-18T15:40:00+00:00 [queued]>
+[2024-11-18T15:58:48.940+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: raw_api_sales_data.insert_sales_data scheduled__2024-11-18T15:40:00+00:00 [queued]>
+[2024-11-18T15:58:48.941+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2024-11-18T15:58:48.984+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): insert_sales_data> on 2024-11-18 15:40:00+00:00
+[2024-11-18T15:58:48.998+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1389) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-18T15:58:49.002+0000] {standard_task_runner.py:72} INFO - Started process 1401 to run task
+[2024-11-18T15:58:49.004+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'raw_api_sales_data', 'insert_sales_data', 'scheduled__2024-11-18T15:40:00+00:00', '--job-id', '370', '--raw', '--subdir', 'DAGS_FOLDER/fetch_data.py', '--cfg-path', '/tmp/tmpvojcd50h']
+[2024-11-18T15:58:49.008+0000] {standard_task_runner.py:105} INFO - Job 370: Subtask insert_sales_data
+[2024-11-18T15:58:49.146+0000] {task_command.py:467} INFO - Running <TaskInstance: raw_api_sales_data.insert_sales_data scheduled__2024-11-18T15:40:00+00:00 [running]> on host c06adc74012b
+[2024-11-18T15:58:49.427+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='raw_api_sales_data' AIRFLOW_CTX_TASK_ID='insert_sales_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-18T15:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-18T15:40:00+00:00'
+[2024-11-18T15:58:49.431+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-18T15:58:49.432+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-18T15:58:49.433+0000] {logging_mixin.py:190} INFO - Current task name:insert_sales_data state:running start_date:2024-11-18 15:58:48.915137+00:00
+[2024-11-18T15:58:49.434+0000] {logging_mixin.py:190} INFO - Dag name:raw_api_sales_data and current dag run status:running
+[2024-11-18T15:58:49.435+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-18T15:58:49.489+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-18T15:58:49.551+0000] {fetch_data.py:73} INFO - Sales data successfully inserted into PostgreSQL.
+[2024-11-18T15:58:49.553+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-18T15:58:49.584+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-18T15:58:49.586+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=raw_api_sales_data, task_id=insert_sales_data, run_id=scheduled__2024-11-18T15:40:00+00:00, execution_date=20241118T154000, start_date=20241118T155848, end_date=20241118T155849
+[2024-11-18T15:58:49.617+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-18T15:58:49.618+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-18T15:58:49.619+0000] {logging_mixin.py:190} INFO - Dag name:raw_api_sales_data queued_at:2024-11-18 15:57:58.740915+00:00
+[2024-11-18T15:58:49.621+0000] {logging_mixin.py:190} INFO - Task hostname:c06adc74012b operator:PythonOperator
+[2024-11-18T15:58:49.664+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-18T15:58:49.720+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-18T15:58:49.727+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

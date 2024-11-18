@@ -1,0 +1,143 @@
+[2024-11-17T22:04:18.170+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-17T22:04:18.376+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: raw_api_sales_data.insert_sales_data manual__2024-11-17T22:04:06.166591+00:00 [queued]>
+[2024-11-17T22:04:18.391+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: raw_api_sales_data.insert_sales_data manual__2024-11-17T22:04:06.166591+00:00 [queued]>
+[2024-11-17T22:04:18.392+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2024-11-17T22:04:18.428+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): insert_sales_data> on 2024-11-17 22:04:06.166591+00:00
+[2024-11-17T22:04:18.436+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=138) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-17T22:04:18.439+0000] {standard_task_runner.py:72} INFO - Started process 140 to run task
+[2024-11-17T22:04:18.440+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'raw_api_sales_data', 'insert_sales_data', 'manual__2024-11-17T22:04:06.166591+00:00', '--job-id', '110', '--raw', '--subdir', 'DAGS_FOLDER/fetch_data.py', '--cfg-path', '/tmp/tmp_40qnpr3']
+[2024-11-17T22:04:18.442+0000] {standard_task_runner.py:105} INFO - Job 110: Subtask insert_sales_data
+[2024-11-17T22:04:18.517+0000] {task_command.py:467} INFO - Running <TaskInstance: raw_api_sales_data.insert_sales_data manual__2024-11-17T22:04:06.166591+00:00 [running]> on host 525767e32e17
+[2024-11-17T22:04:18.694+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='raw_api_sales_data' AIRFLOW_CTX_TASK_ID='insert_sales_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-17T22:04:06.166591+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-17T22:04:06.166591+00:00'
+[2024-11-17T22:04:18.697+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-17T22:04:18.698+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-17T22:04:18.700+0000] {logging_mixin.py:190} INFO - Current task name:insert_sales_data state:running start_date:2024-11-17 22:04:18.377602+00:00
+[2024-11-17T22:04:18.701+0000] {logging_mixin.py:190} INFO - Dag name:raw_api_sales_data and current dag run status:running
+[2024-11-17T22:04:18.702+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-17T22:04:18.704+0000] {logging_mixin.py:190} INFO - ti: <TaskInstance: raw_api_sales_data.insert_sales_data manual__2024-11-17T22:04:06.166591+00:00 [running]>
+[2024-11-17T22:04:18.726+0000] {logging_mixin.py:190} INFO - sales_data: [{'customer_id': 146, 'customer_name': 'Tabby Necolds', 'age': 53, 'email': 'tnecolds0@cdbaby.com', 'country': 'Portugal', 'postal_code': '4960-320', 'purchase_id': 838, 'purchase_quantity': 18, 'purchase_date': '12/23/2021', 'product_id': 2072, 'product_name': 'Milk - Homo', 'quantity': 113, 'total_price': 1333.56, 'price_unit': 84.06}, {'customer_id': 942, 'customer_name': 'Griffie Mathie', 'age': 76, 'email': 'gmathie1@about.me', 'country': 'Indonesia', 'postal_code': nan, 'purchase_id': 1933, 'purchase_quantity': 90, 'purchase_date': '8/18/2021', 'product_id': 2044, 'product_name': 'Onion - Dried', 'quantity': 564, 'total_price': 4495.61, 'price_unit': 886.03}, {'customer_id': 784, 'customer_name': 'Nerti Erett', 'age': 73, 'email': 'nerett2@ftc.gov', 'country': 'Mexico', 'postal_code': '91716', 'purchase_id': 1770, 'purchase_quantity': 34, 'purchase_date': '8/20/2021', 'product_id': 2021, 'product_name': 'Shiratamako - Rice Flour', 'quantity': 744, 'total_price': 8392.12, 'price_unit': 164.21}, {'customer_id': 608, 'customer_name': 'Schuyler Caustic', 'age': 84, 'email': 'scaustic3@gov.uk', 'country': 'Russia', 'postal_code': '188668', 'purchase_id': 184, 'purchase_quantity': 35, 'purchase_date': '2/4/2021', 'product_id': 2027, 'product_name': 'Apple - Macintosh', 'quantity': 577, 'total_price': 5589.1, 'price_unit': 916.02}, {'customer_id': 584, 'customer_name': 'Adrea Coal', 'age': 64, 'email': 'acoal4@odnoklassniki.ru', 'country': 'Indonesia', 'postal_code': nan, 'purchase_id': 761, 'purchase_quantity': 8, 'purchase_date': '5/7/2021', 'product_id': 2027, 'product_name': 'Juice - Apple, 500 Ml', 'quantity': 759, 'total_price': 9049.12, 'price_unit': 546.96}, {'customer_id': 953, 'customer_name': 'Lindi Marjot', 'age': 66, 'email': 'lmarjot5@accuweather.com', 'country': 'China', 'postal_code': nan, 'purchase_id': 932, 'purchase_quantity': 2, 'purchase_date': '4/24/2021', 'product_id': 2025, 'product_name': 'Water - Spring Water 500ml', 'quantity': 533, 'total_price': 6148.6, 'price_unit': 707.92}, {'customer_id': 1001, 'customer_name': 'Feliks Flounders', 'age': 81, 'email': 'fflounders6@yandex.ru', 'country': 'Czech Republic', 'postal_code': '333 01', 'purchase_id': 698, 'purchase_quantity': 99, 'purchase_date': '5/11/2021', 'product_id': 2077, 'product_name': 'Bagel - Everything', 'quantity': 169, 'total_price': 4301.08, 'price_unit': 85.03}, {'customer_id': 71, 'customer_name': 'Aleece Casale', 'age': 73, 'email': 'acasale7@phoca.cz', 'country': 'Honduras', 'postal_code': nan, 'purchase_id': 1878, 'purchase_quantity': 67, 'purchase_date': '4/15/2021', 'product_id': 2063, 'product_name': 'Ice Cream - Strawberry', 'quantity': 422, 'total_price': 232.96, 'price_unit': 418.81}, {'customer_id': 862, 'customer_name': 'Talbert Nisbith', 'age': 60, 'email': 'tnisbith8@berkeley.edu', 'country': 'Russia', 'postal_code': '671950', 'purchase_id': 854, 'purchase_quantity': 32, 'purchase_date': '7/9/2021', 'product_id': 2019, 'product_name': 'Calaloo', 'quantity': 441, 'total_price': 2313.76, 'price_unit': 606.73}, {'customer_id': 441, 'customer_name': 'Milissent Mintoff', 'age': 78, 'email': 'mmintoff9@ox.ac.uk', 'country': 'Sweden', 'postal_code': '973 46', 'purchase_id': 1377, 'purchase_quantity': 75, 'purchase_date': '5/31/2021', 'product_id': 2017, 'product_name': 'Beef - Shank', 'quantity': 905, 'total_price': 1940.2, 'price_unit': 757.51}]
+[2024-11-17T22:04:18.747+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-17T22:04:18.750+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fetch_data.py", line 71, in insert_sales_data
+    conn = hook.get_conn()
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/postgres/hooks/postgres.py", line 181, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2024-11-17T22:04:18.790+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-11-17T22:04:18.792+0000] {logging_mixin.py:190} INFO - Task start:2024-11-17 22:04:18.377602+00:00 end:2024-11-17 22:04:18.789308+00:00 duration:0.411706
+[2024-11-17T22:04:18.793+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): insert_sales_data> dag:<DAG: raw_api_sales_data> dagrun:<DagRun raw_api_sales_data @ 2024-11-17 22:04:06.166591+00:00: manual__2024-11-17T22:04:06.166591+00:00, state:running, queued_at: 2024-11-17 22:04:06.230523+00:00. externally triggered: True>
+[2024-11-17T22:04:18.794+0000] {logging_mixin.py:190} INFO - Failure caused by connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2024-11-17T22:04:18.795+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=raw_api_sales_data, task_id=insert_sales_data, run_id=manual__2024-11-17T22:04:06.166591+00:00, execution_date=20241117T220406, start_date=20241117T220418, end_date=20241117T220418
+[2024-11-17T22:04:18.844+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-17T22:04:18.845+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 110 for task insert_sales_data (connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+; 140)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fetch_data.py", line 71, in insert_sales_data
+    conn = hook.get_conn()
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/postgres/hooks/postgres.py", line 181, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2024-11-17T22:04:18.898+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-11-17T22:04:18.950+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-17T22:04:18.955+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

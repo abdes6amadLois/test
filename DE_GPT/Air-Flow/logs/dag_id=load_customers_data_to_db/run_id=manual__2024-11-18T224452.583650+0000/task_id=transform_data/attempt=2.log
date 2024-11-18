@@ -1,0 +1,125 @@
+[2024-11-18T22:45:09.377+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-18T22:45:09.402+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_customers_data_to_db.transform_data manual__2024-11-18T22:44:52.583650+00:00 [queued]>
+[2024-11-18T22:45:09.413+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_customers_data_to_db.transform_data manual__2024-11-18T22:44:52.583650+00:00 [queued]>
+[2024-11-18T22:45:09.414+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2024-11-18T22:45:09.434+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): transform_data> on 2024-11-18 22:44:52.583650+00:00
+[2024-11-18T22:45:09.443+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=254) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-18T22:45:09.445+0000] {standard_task_runner.py:72} INFO - Started process 256 to run task
+[2024-11-18T22:45:09.445+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'load_customers_data_to_db', 'transform_data', 'manual__2024-11-18T22:44:52.583650+00:00', '--job-id', '531', '--raw', '--subdir', 'DAGS_FOLDER/refined/insert_data_to_3.py', '--cfg-path', '/tmp/tmpu1hddqj6']
+[2024-11-18T22:45:09.447+0000] {standard_task_runner.py:105} INFO - Job 531: Subtask transform_data
+[2024-11-18T22:45:09.507+0000] {task_command.py:467} INFO - Running <TaskInstance: load_customers_data_to_db.transform_data manual__2024-11-18T22:44:52.583650+00:00 [running]> on host c06adc74012b
+[2024-11-18T22:45:09.629+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_customers_data_to_db' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-18T22:44:52.583650+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-18T22:44:52.583650+00:00'
+[2024-11-18T22:45:09.631+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-18T22:45:09.632+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-18T22:45:09.632+0000] {logging_mixin.py:190} INFO - Current task name:transform_data state:running start_date:2024-11-18 22:45:09.403044+00:00
+[2024-11-18T22:45:09.633+0000] {logging_mixin.py:190} INFO - Dag name:load_customers_data_to_db and current dag run status:running
+[2024-11-18T22:45:09.633+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-18T22:45:09.646+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-18T22:45:09.663+0000] {insert_data_to_3.py:28} INFO - Nombre de lignes récupérées : 70
+[2024-11-18T22:45:09.664+0000] {insert_data_to_3.py:32} INFO - Traitement de la ligne : (722, 'Keven Luciano', 20, 'kluciano0@dagondesign.com', 'Nigeria', 'NaN', 1298, 83, datetime.date(2021, 4, 16), 2058, 'Basil - Pesto Sauce', 412, Decimal('706.03'))
+[2024-11-18T22:45:09.671+0000] {insert_data_to_3.py:32} INFO - Traitement de la ligne : (459, 'Renado Medcalf', 66, 'rmedcalf1@cdbaby.com', 'Afghanistan', 'NaN', 1068, 38, datetime.date(2021, 8, 2), 2093, 'Cranberries - Dry', 642, Decimal('87.46'))
+[2024-11-18T22:45:09.677+0000] {insert_data_to_3.py:32} INFO - Traitement de la ligne : (984, 'Sherrie Pawels', 44, 'spawels2@phpbb.com', 'Russia', '172711.0', 798, 98, datetime.date(2021, 4, 8), 2027, 'Syrup - Monin - Blue Curacao', 595, Decimal('972.35'))
+[2024-11-18T22:45:09.684+0000] {insert_data_to_3.py:32} INFO - Traitement de la ligne : (46, 'Maureen Cosely', 27, 'mcosely3@about.com', 'Indonesia', 'NaN', 102, 81, datetime.date(2021, 12, 17), 2033, 'Nut - Peanut, Roasted', 956, Decimal('934.3'))
+[2024-11-18T22:45:09.692+0000] {insert_data_to_3.py:32} INFO - Traitement de la ligne : (159, 'Eunice Roomes', 30, 'eroomes4@time.com', 'China', 'NaN', 446, 28, datetime.date(2021, 5, 26), 2033, 'Cheese - Victor Et Berthold', 864, Decimal('948.06'))
+[2024-11-18T22:45:09.700+0000] {insert_data_to_3.py:32} INFO - Traitement de la ligne : (225, 'Ronalda Barrowcliff', 66, 'rbarrowcliff5@desdev.cn', 'Philippines', '8106.0', 599, 100, datetime.date(2021, 1, 20), 2051, 'Muffin Puck Ww Carrot', 283, Decimal('920.1'))
+[2024-11-18T22:45:09.707+0000] {insert_data_to_3.py:32} INFO - Traitement de la ligne : (746, 'Arlette Durtnel', 56, 'adurtnel6@networksolutions.com', 'United States', '40745.0', 1978, 1, datetime.date(2021, 8, 1), 2021, 'Garbage Bags - Black', 600, Decimal('792.6'))
+[2024-11-18T22:45:09.710+0000] {insert_data_to_3.py:65} ERROR - Erreur lors de l'insertion des données : value too long for type character varying(25)
+
+[2024-11-18T22:45:09.713+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/refined/insert_data_to_3.py", line 35, in transform_data
+    cursor.execute("""
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(25)
+
+[2024-11-18T22:45:09.731+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-11-18T22:45:09.732+0000] {logging_mixin.py:190} INFO - Task start:2024-11-18 22:45:09.403044+00:00 end:2024-11-18 22:45:09.730736+00:00 duration:0.327692
+[2024-11-18T22:45:09.732+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): transform_data> dag:<DAG: load_customers_data_to_db> dagrun:<DagRun load_customers_data_to_db @ 2024-11-18 22:44:52.583650+00:00: manual__2024-11-18T22:44:52.583650+00:00, state:running, queued_at: 2024-11-18 22:44:52.594048+00:00. externally triggered: True>
+[2024-11-18T22:45:09.733+0000] {logging_mixin.py:190} INFO - Failure caused by value too long for type character varying(25)
+[2024-11-18T22:45:09.733+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=load_customers_data_to_db, task_id=transform_data, run_id=manual__2024-11-18T22:44:52.583650+00:00, execution_date=20241118T224452, start_date=20241118T224509, end_date=20241118T224509
+[2024-11-18T22:45:09.749+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-18T22:45:09.750+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 531 for task transform_data (value too long for type character varying(25)
+; 256)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/refined/insert_data_to_3.py", line 35, in transform_data
+    cursor.execute("""
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(25)
+
+[2024-11-18T22:45:09.781+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-11-18T22:45:09.803+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-18T22:45:09.806+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

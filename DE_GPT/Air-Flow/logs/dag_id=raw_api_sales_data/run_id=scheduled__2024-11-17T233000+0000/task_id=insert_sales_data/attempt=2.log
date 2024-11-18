@@ -1,0 +1,142 @@
+[2024-11-17T23:40:16.261+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-17T23:40:16.278+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: raw_api_sales_data.insert_sales_data scheduled__2024-11-17T23:30:00+00:00 [queued]>
+[2024-11-17T23:40:16.290+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: raw_api_sales_data.insert_sales_data scheduled__2024-11-17T23:30:00+00:00 [queued]>
+[2024-11-17T23:40:16.291+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2024-11-17T23:40:16.307+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): insert_sales_data> on 2024-11-17 23:30:00+00:00
+[2024-11-17T23:40:16.313+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=233) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-17T23:40:16.315+0000] {standard_task_runner.py:72} INFO - Started process 235 to run task
+[2024-11-17T23:40:16.315+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'raw_api_sales_data', 'insert_sales_data', 'scheduled__2024-11-17T23:30:00+00:00', '--job-id', '180', '--raw', '--subdir', 'DAGS_FOLDER/fetch_data.py', '--cfg-path', '/tmp/tmpd5obq1vj']
+[2024-11-17T23:40:16.316+0000] {standard_task_runner.py:105} INFO - Job 180: Subtask insert_sales_data
+[2024-11-17T23:40:16.363+0000] {task_command.py:467} INFO - Running <TaskInstance: raw_api_sales_data.insert_sales_data scheduled__2024-11-17T23:30:00+00:00 [running]> on host 32413fe3731c
+[2024-11-17T23:40:16.443+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='raw_api_sales_data' AIRFLOW_CTX_TASK_ID='insert_sales_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-17T23:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-17T23:30:00+00:00'
+[2024-11-17T23:40:16.444+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-17T23:40:16.445+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-17T23:40:16.445+0000] {logging_mixin.py:190} INFO - Current task name:insert_sales_data state:running start_date:2024-11-17 23:40:16.279514+00:00
+[2024-11-17T23:40:16.446+0000] {logging_mixin.py:190} INFO - Dag name:raw_api_sales_data and current dag run status:running
+[2024-11-17T23:40:16.446+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-17T23:40:16.455+0000] {logging_mixin.py:190} INFO - sales_data: [{'customer_id': 499, 'customer_name': 'Lexine Swaton', 'age': 48, 'email': 'lswaton0@samsung.com', 'country': 'Thailand', 'postal_code': '83120', 'purchase_id': 678, 'purchase_quantity': 24, 'purchase_date': '6/7/2021', 'product_id': 2028, 'product_name': 'Beer - Guiness', 'quantity': 409, 'total_price': 8516.58, 'price_unit': 614.44}, {'customer_id': 336, 'customer_name': 'Herc Robarts', 'age': 57, 'email': 'hrobarts1@omniture.com', 'country': 'Democratic Republic of the Congo', 'postal_code': nan, 'purchase_id': 1772, 'purchase_quantity': 30, 'purchase_date': '4/19/2021', 'product_id': 2023, 'product_name': 'Beef - Roasted, Cooked', 'quantity': 819, 'total_price': 494.85, 'price_unit': 264.76}, {'customer_id': 435, 'customer_name': 'Mair Mellodey', 'age': 30, 'email': 'mmellodey2@a8.net', 'country': 'Indonesia', 'postal_code': nan, 'purchase_id': 213, 'purchase_quantity': 67, 'purchase_date': '8/3/2021', 'product_id': 2072, 'product_name': 'Yogurt - Peach, 175 Gr', 'quantity': 170, 'total_price': 947.13, 'price_unit': 71.84}, {'customer_id': 399, 'customer_name': 'Willyt Langstaff', 'age': 36, 'email': 'wlangstaff3@pen.io', 'country': 'Brazil', 'postal_code': '96910-000', 'purchase_id': 1733, 'purchase_quantity': 92, 'purchase_date': '8/3/2021', 'product_id': 2035, 'product_name': 'Appetizer - Veg Assortment', 'quantity': 230, 'total_price': 7373.07, 'price_unit': 931.71}, {'customer_id': 517, 'customer_name': 'Janie Sommerscales', 'age': 78, 'email': 'jsommerscales4@mediafire.com', 'country': 'Russia', 'postal_code': '628408', 'purchase_id': 1297, 'purchase_quantity': 67, 'purchase_date': '11/24/2021', 'product_id': 2039, 'product_name': 'Cheese - Cambozola', 'quantity': 259, 'total_price': 6539.01, 'price_unit': 175.22}, {'customer_id': 579, 'customer_name': 'Jephthah Cordner', 'age': 80, 'email': 'jcordner5@discuz.net', 'country': 'United States', 'postal_code': '27150', 'purchase_id': 626, 'purchase_quantity': 50, 'purchase_date': '4/10/2021', 'product_id': 2023, 'product_name': 'Wine - Magnotta - Red, Baco', 'quantity': 782, 'total_price': 9900.23, 'price_unit': 694.19}, {'customer_id': 115, 'customer_name': 'Quintina Pyson', 'age': 22, 'email': 'qpyson6@craigslist.org', 'country': 'Portugal', 'postal_code': '4950-221', 'purchase_id': 1900, 'purchase_quantity': 78, 'purchase_date': '1/4/2021', 'product_id': 2028, 'product_name': 'Rum - Light, Captain Morgan', 'quantity': 885, 'total_price': 4940.52, 'price_unit': 56.49}, {'customer_id': 164, 'customer_name': 'Karlotta Smardon', 'age': 52, 'email': 'ksmardon7@blog.com', 'country': 'Sweden', 'postal_code': '462 87', 'purchase_id': 872, 'purchase_quantity': 56, 'purchase_date': '3/29/2021', 'product_id': 2003, 'product_name': 'Lamb - Leg, Bone In', 'quantity': 519, 'total_price': 7518.34, 'price_unit': 86.34}, {'customer_id': 377, 'customer_name': 'Sammy Rostern', 'age': 22, 'email': 'srostern8@yale.edu', 'country': 'Portugal', 'postal_code': '4770-073', 'purchase_id': 952, 'purchase_quantity': 59, 'purchase_date': '3/16/2021', 'product_id': 2070, 'product_name': 'Pop - Club Soda Can', 'quantity': 973, 'total_price': 4274.93, 'price_unit': 702.93}, {'customer_id': 483, 'customer_name': 'Janice Dayly', 'age': 62, 'email': 'jdayly9@ehow.com', 'country': 'Sweden', 'postal_code': '468 82', 'purchase_id': 1084, 'purchase_quantity': 24, 'purchase_date': '10/30/2021', 'product_id': 2079, 'product_name': 'Chicken - White Meat With Tender', 'quantity': 560, 'total_price': 958.53, 'price_unit': 853.48}]
+[2024-11-17T23:40:16.462+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-17T23:40:16.463+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fetch_data.py", line 61, in insert_sales_data
+    conn = hook.get_conn()
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/postgres/hooks/postgres.py", line 181, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2024-11-17T23:40:16.475+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-11-17T23:40:16.475+0000] {logging_mixin.py:190} INFO - Task start:2024-11-17 23:40:16.279514+00:00 end:2024-11-17 23:40:16.474875+00:00 duration:0.195361
+[2024-11-17T23:40:16.476+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): insert_sales_data> dag:<DAG: raw_api_sales_data> dagrun:<DagRun raw_api_sales_data @ 2024-11-17 23:30:00+00:00: scheduled__2024-11-17T23:30:00+00:00, state:running, queued_at: 2024-11-17 23:40:00.631188+00:00. externally triggered: False>
+[2024-11-17T23:40:16.476+0000] {logging_mixin.py:190} INFO - Failure caused by connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2024-11-17T23:40:16.477+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=raw_api_sales_data, task_id=insert_sales_data, run_id=scheduled__2024-11-17T23:30:00+00:00, execution_date=20241117T233000, start_date=20241117T234016, end_date=20241117T234016
+[2024-11-17T23:40:16.492+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-17T23:40:16.494+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 180 for task insert_sales_data (connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+; 235)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fetch_data.py", line 61, in insert_sales_data
+    conn = hook.get_conn()
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/postgres/hooks/postgres.py", line 181, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2024-11-17T23:40:16.530+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-11-17T23:40:16.569+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-17T23:40:16.572+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
